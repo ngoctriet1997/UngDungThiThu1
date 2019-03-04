@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+h3.menu-title {
+}
+
+.thanhcboluachon .col-sm-4 {
+    padding: 0px;
+}
+
+.phandau p {
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.themcauhoi {
+      font-size: 22px;
+    border-radius: 50%;
+  
+}
+
+
+.thanhmenutrai i {
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 26px;
+}
+
+
+
+*{
+    padding:0px;
+    margin: 0px;
+    font-weight: 700;
+
+}
+
+td.cellMaCauHoi.sorting_1 {
+    cursor: pointer;
+}
+
+#modalImportFile input[type="file"] {
+    width: 100px;
+}
+
+aside.left-panel.phu ul.nav.navbar-nav li:first-child {
+    border: none;
+}
+
+span#btnToggleMenuPhu {
+    font-size: 30px;
+    color: #b5b6c7;
+    cursor: pointer;
+}
+
+h3.menu-title span {
+    font-size: 30px;
+    padding-left: 66px;
+    cursor: pointer;
+}
+
+ul.nav.navbar-nav li:first-child {
+    border-bottom: 2px solid #565353;
+}
+
+li {}
+
+select.c-select.LuaChomMon {
+    float: right;
+    height: 32px;
+    border-radius: 3px;
+}
+
+.col-md-4 {
+    padding: 0 15px;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.row.thanhcboluachon {
+}
+
+.cboLuaChon select.c-select {
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 38px;
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+textarea.form-control {
+    height: 73px;
+    background: #e8e8e8;
+    padding-left: 50px;
+}
+
+textarea.form-control:focus {
+    background: #e8e8e8;
+}
+
+.cautraloi textarea.form-control {
+    width: 90%;
+    float: left;
+    height: 45px;
+    margin-top: 25px;
+    padding-left: 50px;
+}
+
+
+
+
+
+.thanhthaotacthemsanpham {margin-left:  220px;margin-top: 15px;padding-bottom: 10px;}
+
+.thanhthaotacthemsanpham button {
+    border-radius: 5px;
+}
+
+.chonkho select {
+    background: #E8E8E8;
+    width: 46%;
+    float: right;
+}
+
+.themhinhchosanpham button.btn.btn-danger {
+    color: white;
+    font-weight: bold;
+    margin-left: 87px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+.duongvien {
+    border-bottom: 3px solid #009CDE;
+    padding: 5px;
+    color: #009CDE;
+    clear: both;
+    width: 50%;
+}
+
+
+
+
+
+.cautraloi input {
+    height: 25px;
+    width: 22px;
+    float: left;
+    margin-top: 38px;
+    margin-left: 30px;
+    color: #009cde;
+}
+
+.khoithemthuoctinh input {
+    width: 60%;
+    float: right;
+}
+
+.formthemsanpham fieldset.form-group {position: relative;width: 100%;padding: 0px;}
+
+
+.khoithemthuoctinh fieldset.form-group {
+    width: 100%;
+}
+.formthemsanpham fieldset.form-group:nth-child(3+1n)
+ {width: 100%;}
+.formthemsanpham i {
+    position: absolute;
+    top: 11px;
+    left: 5px;
+}
+
+.cautraloi i.fas.fa-lightbulb {
+    font-size: 30px;
+    top: 33px;
+    color: #009cde;
+}
+
+i.fas.fa-question-circle {
+    font-size: 30px;
+    top: 4px;
+}
+
+i.fas.fa-times-circle.dongthuoctinh {
+    margin-left: 270px;
+    font-size: 35px;
+    margin-top: -8px;
+}
+
+form.formthemsanpham {
+    width: 100%;
+    margin-top: 6px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+
+.phandau {
+    width: 100%;
+    text-align: center;
+    background: #009cde;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    font-weight: 800;
+}
+
+.themnhanvien {
+    width: 690px;
+    margin: auto;
+    background: white;
+    margin-top: 2%;
+    height: 650px;
+}
+.dongthuoctinh{
+    cursor: pointer;
+}

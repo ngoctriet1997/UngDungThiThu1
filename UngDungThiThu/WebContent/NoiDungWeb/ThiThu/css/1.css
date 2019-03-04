@@ -1,0 +1,220 @@
+*{margin: 0;padding: 0}
+
+#modalDangXuat .modal-content {
+    color: #484545;
+}
+
+.danhSachCauHoi {
+    padding: 10px;
+}
+
+.cauhoi {
+    padding: 5px 10px;
+    background: #dce2e6;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.caudangchon {
+    border: 1px solid;
+}
+
+.caudalam {
+    box-shadow: inset 0px -10px 0px 0px;
+}
+
+.phanchinh {
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.thanhmenu {
+    height: 10vh;
+}
+
+.tenmonthi {
+    border-bottom: 1px solid #a9a3a3;
+    height: 36px;
+}
+
+.pnlCauHoi {
+    border-radius: 5px;
+    border: 1px solid #dacdcd;
+    padding: 30px;
+    margin-bottom: 200px;
+}
+
+.khungthi {
+    height: auto;
+}
+
+.khungcautraloi {
+    background: #D9EDF7;
+    border-radius: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+table.table.ThongTinSinhVien>tbody>tr:first-child {
+    border-top: 0;
+}
+
+table.table.ThongTinSinhVien>tbody>tr>td {
+    border-top: 0;
+    padding:0.75rem 0;
+    text-align:left
+}
+
+table.table.ThongTinSinhVien {}
+
+table.table.ThongTinSinhVien>tbody>tr {
+    border: 1px solid rgb(221,221,221);
+}
+.logo-plus-button{
+    display: none;
+}
+.row.khungChuDe {
+    /* border-bottom: 1px dotted; */
+}
+
+.col-sm-7.mt-1.scroll {
+    border: 1px solid;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+
+.col-sm-7.mt-1.scroll h3 {
+    border-bottom: 2px dotted;
+    font-size: 2rem;
+    color: blue;
+}
+
+.headerChuDe h4 {
+    color: tomato;
+    font-weight: 700;
+}
+
+.noiDungChuDe {
+    border-bottom: 8px dotted;
+    margin-left: 2rem;
+    margin-top: inherit;
+}
+
+.noiDungChuDe a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.headerChuDe {
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+h4 {}
+/*hml3*/
+.cardFather{
+}
+.card-body.danhSachCauHoi span a{
+text-decoration: none;
+color: white;
+transition-duration: 2s;
+}
+.card-body.danhSachCauHoi span {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background: #c0c2c4;
+    margin: 0.25rem;
+    text-align: center;
+    float: left;
+
+}
+
+.col-sm-3.khungCauHoi {
+    padding: 0;
+    background: #EEEEEE;
+    color: #4b4bb7;
+    margin-right: 28px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.col-sm-3.khungCauHoi h5 {
+}
+
+.col-sm-3.khungCauHoi {}
+
+.phanCauHoi {
+    background: white;
+    color: black;
+    margin-bottom: 1rem;
+    margin-top: 15px;
+}
+
+.form-check.cauTraLoi {
+    padding-left: 1rem;
+}
+/*html2*/
+tr.even:hover {
+    background-color: blue;
+    color: white;
+}
+
+tr.odd:hover {
+    background: blue;
+    color:white
+}
+
+div#example_paginate {
+    width: 10rem;
+    float: right;
+}
+
+div#example_info {
+    width: 10rem;
+    float: left;
+}
+
+#example_paginate a {
+    background: #eceeef;
+    padding: 5px;
+    margin-left: 2px;
+}
+/*Go top*/
+#goTop {bottom: 200px;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    width: 44px;
+    z-index: 1000;}
+
+/*html 1*/
+.lich{
+    position: fixed;
+    right: 50px;
+    background: white;
+    border: 1px solid #d8d5d5;
+    border-radius: 5px;
+    padding: 22px;
+    box-shadow: 0 0 2px 1px #e0d8d8;
+}
+.navHtnl1{
+    position: fixed;
+}
+
+.title{
+    font-size: 2rem;
+    color: white;
+}
+.footer {background: #222;border-top: 5px solid #333;color: #ccc;font-weight: bold;height:50px;line-height: 50px;width: 100%;text-align: center;bottom: 0;left: 0;}
+#example_length{
+    float:left;
+}
+.caulamsai {
+    box-shadow: inset 0px -10px 0px 0px #f31111;
+}

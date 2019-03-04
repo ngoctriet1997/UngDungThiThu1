@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="KetQua" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bcd89185-4b2c-4290-b4fd-e1e0c39f0d3b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<parameter name="pmathisinh" class="java.lang.Integer"/>
+	<parameter name="pmadethi" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT bangdiem.mathisinh,
+	diem,
+	now( ) AS thoigianxuatfile,
+	thisinh.ten AS tenthisinh,
+	monhoc.ten AS tenmonhoc,
+	bangdiem.madethi
+FROM bangdiem
+	left join thisinh ON 
+	 bangdiem.mathisinh = thisinh.ma 
+	left join chitietdethi ON 
+	 bangdiem.madethi = chitietdethi.madethi 
+	left join cauhoi ON 
+	 chitietdethi.macauhoi = cauhoi.ma 
+	left join monhoc ON 
+	 cauhoi.mamon = monhoc.ma 
+WHERE 
+	 bangdiem.mathisinh = $P{pmathisinh} 
+	 AND bangdiem.madethi = $P{pmadethi} 
+LIMIT 1]]>
+	</queryString>
+	<field name="mathisinh" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="mathisinh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bangdiem"/>
+	</field>
+	<field name="diem" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="diem"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bangdiem"/>
+	</field>
+	<field name="thoigianxuatfile" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="thoigianxuatfile"/>
+	</field>
+	<field name="tenthisinh" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tenthisinh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="thisinh"/>
+	</field>
+	<field name="tenmonhoc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tenmonhoc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="monhoc"/>
+	</field>
+	<field name="madethi" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="madethi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bangdiem"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="86" y="17" width="100" height="30" uuid="13a84b63-e4a1-41c9-be9f-5f43e2e27e6f"/>
+				<textFieldExpression><![CDATA[$F{mathisinh}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

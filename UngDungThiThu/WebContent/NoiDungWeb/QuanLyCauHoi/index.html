@@ -1,0 +1,278 @@
+<!doctype html>
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Danh sách câu hỏi</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+	   <link rel="stylesheet" href="assets/css/lib/datatable/dataTables.bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/fonts/fontawesome-free-5.3.1-web/css/all.css">
+	  <link href="DanhSachCauHoi.css" rel="stylesheet">
+	  <script type="text/javascript" src="DanhSachCauHoi.js"></script>
+	<style>
+	
+				.QLDT .btnE,.btnV {
+			padding:5px;
+			color:darkgreen;
+			font-size:18px;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+        <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        	<nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+              
+              
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse thanhmenutrai">
+                <ul class="nav navbar-nav">
+                   
+                    <h3 class="menu-title">Quản lý Câu hỏi</h3><!-- /.menu-title -->
+                  <li class="active">
+						<a  href="/QLSP"> <i class="far fa-user"></i>Hồ sơ cá nhân</a>
+					</li>
+					<li>
+						<a href="/QLSP"> <i class="far fa-question-circle"></i>Danh sách câu hỏi</a>
+					</li>
+					<li>
+						<a href="/QLSP"> <i class="far fa-list-alt"></i>Danh sách môn học</a>
+					</li>
+					<li>
+						<a href="/QLSP"><i class="fas fa-sign-out-alt" ></i>Đăng xuất</a>
+					</li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+    
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                       <button  data-toggle="modal"  data-target="#ThemCauHoi" class="btn btn-danger themcauhoi"><i class="fas fa-plus"></i>
+                       </button>
+                       <button class="btn btn-primary themcauhoi"><i class="fas fa-file-import"></i></button>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+
+        <div class="content mt-3"><!--phần nội dung bảng để trong div này-->
+			<div class="QLDT container">
+		 		<div class="formDeThi card">
+                        <div class="card-header">
+                            <strong class="card-title">Danh sách câu hỏi</strong>
+                        </div>
+                        <div class="card-body">
+                        	
+							<select class="c-select LuaChomMon">
+								<option selected>Open this select menu</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+				
+					  <table id="bootstrap-data-table" class="table table-striped table-bordered">
+						<thead>
+						  <tr>
+							<th>Câu hỏi</th>
+							<th>Môn</th>
+							<th>mức độ</th>
+							<th>Đáp án 1</th>
+							<th>Đáp án 2</th>
+							<th>Đáp án 3</th>
+							<th>Đáp án 4</th>
+						  </tr>
+						</thead>
+						<tbody>
+						 <tr>
+							<td>01</td>
+							 <td>Đề thi năm 2018</td>
+							 <td>27-01-2018 6:20:00</td>
+							 <td>60 p</td>
+							 <td>1</td>
+							 <td>true</td>
+							 <td>
+								<a class="btnV" href="#"><i class="fa fa-eye"></i></a>
+								 <a class="btnE" href="#"><i class="fa fa-edit"></i></a>
+							 </td>
+						</tr>
+							<tr>
+							<td>01</td>
+							 <td>Đề thi năm 2018</td>
+							 <td>27-01-2018 6:20:00</td>
+							 <td>60 p</td>
+							 <td>1</td>
+							 <td>true</td>
+							 <td>
+								<a class="btnV" href="#"><i class="fa fa-eye"></i></a>
+								 <a class="btnE" href="#"><i class="fa fa-edit"></i></a>
+							 </td>
+						</tr>
+							<tr>
+							<td>01</td>
+							 <td>Đề thi năm 2018</td>
+							 <td>27-01-2018 6:20:00</td>
+							 <td>60 p</td>
+							 <td>1</td>
+							 <td>true</td>
+							 <td>
+								<a class="btnV" href="#"><i class="fa fa-eye"></i></a>
+								 <a class="btnE" href="#"><i class="fa fa-edit"></i></a>
+							 </td>
+						</tr>
+						</tbody>
+					  </table>
+                        </div>
+                    </div>
+    		</div>
+		</div>
+	</div>
+	<div class="modal fade " id="ThemCauHoi" role="dialog">  
+		<div class="modal-dialog modal-lg">
+			 <div class="modal-content">
+		<div class="phandau"><p>Thêm mới câu hỏi</p></div>
+
+		<form class="formthemsanpham">
+		
+			<fieldset class="form-group">
+			<i class="fas fa-question-circle"></i>		
+				<textarea class="form-control"></textarea> 
+			</fieldset>
+			<div class="container-fluid">
+				<div class="row thanhcboluachon">
+					<div class="col-md-6">
+						<fieldset class="form-group cboLuaChon">
+						<i class="fas fa-question-circle"></i>		
+							<select class="c-select">
+							 	<option selected>Chọn môn</option>
+							 	<option value="1">chuyên đề 1</option>
+							 	<option value="2">chuyên đề 2</option>
+							 	<option value="3">chuyên đề 3</option>
+							 </select> 
+						</fieldset>
+					</div>
+					<div class="col-md-6">
+						<fieldset class="form-group cboLuaChon">
+						<i class="fas fa-question-circle"></i>		
+							<select class="c-select">
+							 	<option selected>Chọn mức độ</option>
+							 	<option value="1">Dễ</option>
+							 	<option value="2">Trung</option>
+							 	<option value="3">Khó</option>
+							 </select> 
+						</fieldset>
+					</div>
+					
+				</div>
+			</div>
+			
+			
+			
+			<div class="duongvien">
+				Câu trả lời
+			</div>
+			<fieldset class="form-group cautraloi ">
+					<i class="fas fa-lightbulb"></i>	
+					<textarea class="form-control "></textarea> 
+					<input id="radioStacked1 "   name="radio-stacked" type="radio">
+			</fieldset> <!-- het mot cau tra loi -->
+			<fieldset class="form-group cautraloi">
+					<i class="fas fa-lightbulb"></i>	
+					<textarea class="form-control"></textarea> 
+					<input id="radioStacked1" name="radio-stacked" type="radio">
+			</fieldset> <!-- het mot cau tra loi --><fieldset class="form-group cautraloi">
+					<i class="fas fa-lightbulb"></i>	
+					<textarea class="form-control"></textarea> 
+					<input id="radioStacked1" name="radio-stacked" type="radio">
+			</fieldset> <!-- het mot cau tra loi -->
+			<fieldset class="form-group cautraloi">
+					<i class="fas fa-lightbulb"></i>	
+					<textarea class="form-control"></textarea> 
+					<input id="radioStacked1" name="radio-stacked" type="radio">
+			</fieldset> <!-- het mot cau tra loi -->
+				
+		
+				<div class="thanhthaotacthemsanpham modal-footer">
+					<button type="submit" class="btn btn-primary dongy">Đồng ý</button>
+					<button type="submit" class="btn btn-danger dong">Đóng</button>
+				</div>
+		</form>
+
+		<div style="clear: both;"></div>
+	</div> <!-- het content -->
+		</div> <!-- het modal -->
+	</div> <!-- het them cau hoi --> <!--  -->
+
+
+
+
+
+
+
+
+    <!-- Right Panel -->
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+	    <script src="assets/js/lib/data-table/datatables.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+    <script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
+    <script src="assets/js/lib/data-table/jszip.min.js"></script>
+    <script src="assets/js/lib/data-table/pdfmake.min.js"></script>
+    <script src="assets/js/lib/data-table/vfs_fonts.js"></script>
+    <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
+    <script src="assets/js/lib/data-table/buttons.print.min.js"></script>
+    <script src="assets/js/lib/data-table/buttons.colVis.min.js"></script>
+    <script src="assets/js/lib/data-table/datatables-init.js"></script>
+
+    <script>
+             $(document).ready(function() {
+          $('#bootstrap-data-table-export').DataTable();
+				
+			 });
+       
+    </script>
+
+</body>
+</html>
